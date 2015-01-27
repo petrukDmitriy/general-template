@@ -1,0 +1,463 @@
+/*
+  Here present fixes for Front page in
+  Internet explorer version less than 9.0
+*/
+// Node top padding
+@mixin sprite($sprite, $x, $y) {
+  background: url($sprite) no-repeat $x $y;
+}
+
+$green: #7a9c42;
+$blue: #2d3339;
+
+$sprite-ie: '../images/ie_sprite.png';
+
+.lt-ie9 {
+  // elements only for ie8
+  .ie8 {
+    display: block;
+  }
+
+  .container {
+    width: 1088px;
+  }
+
+  .btn-scroll-top {
+    filter: alpha(opacity=0);
+
+    &.show {
+      filter: alpha(opacity=75);
+
+      &:hover {
+        filter: alpha(opacity=100);
+      }
+    }
+  }
+
+  .csr-checkbox input {
+    filter: alpha(opacity=0);
+  }
+
+  // background overlay
+  .focus-background {
+
+    img {
+      position: relative;
+      zoom: 1;
+    }
+
+    &.green .bg-overlay,
+    &.blue .bg-overlay {
+      z-index: 1;
+      display: block;
+      filter: alpha(opacity=70);
+    }
+  }
+
+  .full-width-background {
+
+    &.gray .bg-overlay {
+      z-index: 1;
+      display: block;
+      filter: alpha(opacity=65);
+    }
+
+    &.green .bg-overlay {
+      z-index: 1;
+      display: block;
+      filter: alpha(opacity=70);
+    }
+  }
+
+  // popup container
+  .popup-container {
+    filter: alpha(opacity=0);
+
+    &.show {
+      filter: alpha(opacity=100);
+    }
+  }
+
+  // popup header backgrounds
+  .popup-header-background {
+
+    svg,
+    img {
+      filter: alpha(opacity=5);
+    }
+  }
+
+  .button-close-popup:hover {
+    filter: alpha(opacity=80);
+  }
+
+  .environmental-tabs .item:after {
+    display: none;
+  }
+
+  .environmental-tabs .item.active:after {
+    display: block;
+  }
+
+  // map section content
+  .map-section {
+    .content {
+      filter: alpha(opacity=100);
+    }
+
+    .map-popup {
+      filter: alpha(opacity=0);
+
+      &.hide {
+        filter: alpha(opacity=0);
+      }
+    }
+
+    &.show {
+      .content {
+        filter: alpha(opacity=0);
+      }
+
+      .full-width-background .bg-overlay {
+        display: none;
+      }
+
+      .map-popup {
+        filter: alpha(opacity=100);
+
+        &.hide {
+          filter: alpha(opacity=60);
+        }
+      }
+    }
+  }
+
+  .button-hide-map {
+    background: $green;
+    filter: alpha(opacity=80);
+
+    &:hover {
+      filter: alpha(opacity=100);
+    }
+  }
+
+  // top section image
+  .top-video {
+    background: none;
+
+    img.desktop-element {
+      display: block;
+    }
+  }
+
+  // svg images change on png
+  .intro-scroll-btn .icon-arrow-down-white,
+  .footer-logo-container .footer-logo,
+  .get-report .icon-arrow-down-blue,
+  .button-close-popup .icon-close,
+  .popup-header-background,
+  .icon-focus-list-popup,
+  .icon-arrow-top-white,
+  .icon-environmental,
+  .focus-slide-item,
+  .icon-information,
+  .icon-close-map,
+  .close-map-popup,
+  .btn-scroll-top,
+  .highlight-item,
+  .social-links,
+  .logo-sticky,
+  .focus-nav,
+  .header-logo {
+    img {
+      display: none;
+    }
+  }
+
+  .header-logo {
+    @include sprite($sprite-ie, -17px, 0);
+  }
+
+  .intro-scroll-btn .icon-arrow-down-white {
+    @include sprite($sprite-ie, 0, 0);
+    top: 0;
+  }
+
+  .logo-sticky {
+    width: 99px;
+    height: 38px;
+    @include sprite($sprite-ie, -123px, 0);
+  }
+
+  .get-report .icon-arrow-down-blue {
+    @include sprite($sprite-ie, 0, -18px);
+  }
+
+  .footer-logo-container .footer-logo {
+    @include sprite($sprite-ie, -233px, 0);
+  }
+
+  .btn-scroll-top {
+
+    .icon-arrow-top-white {
+      vertical-align: middle;
+      @include sprite($sprite-ie, -308px, 0);
+    }
+  }
+
+  .download-report-wrapper .close-form {
+    text-align: center;
+
+    // for vertical align icon
+    &:after {
+      content: '';
+      display: inline-block;
+      height: inherit;
+      width: 0;
+      font-size: 0;
+      line-height: 0;
+      vertical-align: middle;
+    }
+
+    .icon-close-form {
+      @include sprite($sprite-ie, -343px, 0);
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      font-size: 0;
+      line-height: 0;
+      vertical-align: middle;
+    }
+  }
+
+  // focus section icons
+  .focus-mini-item {
+    background-image: none;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      height: 60px;
+      left: 20px;
+      margin-top: -30px;
+    }
+
+    &.digital:after {
+      width: 58px;
+      @include sprite($sprite-ie, 0, -46px);
+    }
+
+    &.customers:after {
+      width: 57px;
+      @include sprite($sprite-ie, -68px, -46px);
+    }
+
+    &.climate:after {
+      width: 55px;
+      @include sprite($sprite-ie, -133px, -46px);
+    }
+
+    &.employee:after {
+      @include sprite($sprite-ie, -199px, -46px);
+      width: 57px;
+      left: 15px;
+    }
+
+    &.social:after {
+      width: 45px;
+      @include sprite($sprite-ie, -263px, -46px);
+    }
+  }
+
+  // slider arrows
+  .focus-prev-arrow {
+    @include sprite($sprite-ie, -316px, -46px);
+
+    &:hover {
+      @include sprite($sprite-ie, -447px, -46px);
+    }
+  }
+
+  .focus-next-arrow {
+    @include sprite($sprite-ie, -381px, -46px);
+
+    &:hover {
+      @include sprite($sprite-ie, -512px, -46px);
+    }
+  }
+
+  // highlights icons
+  .highlight-item-content .highlight-icon {
+    height: 95px;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+
+  .icon-highlights-digital {
+    width: 87px;
+    @include sprite($sprite-ie, 0, -110px);
+  }
+
+  .icon-highlights-customers {
+    width: 87px;
+    @include sprite($sprite-ie, -92px, -110px);
+  }
+
+  .icon-highlights-climate {
+    width: 88px;
+    @include sprite($sprite-ie, -188px, -110px);
+  }
+
+  .icon-highlights-social {
+    width: 108px;
+    @include sprite($sprite-ie, -286px, -110px);
+  }
+
+  .icon-highlights-employee {
+    width: 60px;
+    @include sprite($sprite-ie, -402px, -110px);
+  }
+
+  // popup sticky header fix background
+  .popup-header-sticky.sticky {
+    background: #2d3339;
+  }
+
+  // fix about section's icons
+  .icon-large-ie8 {
+    display: inline-block;
+
+  }
+
+  // environmental icons
+  .icon-environmental {
+    display: inline-block;
+    height: 64px;
+
+    &.icon-environmental-emission {
+      width: 58px;
+      @include sprite($sprite-ie, 0, -209px);
+    }
+
+    &.icon-environmental-waste {
+      width: 44px;
+      @include sprite($sprite-ie, -68px, -209px);
+    }
+
+    &.icon-environmental-production {
+      width: 120px;
+      @include sprite($sprite-ie, -125px, -209px);
+    }
+
+    &.icon-environmental-resources {
+      width: 46px;
+      @include sprite($sprite-ie, -256px, -209px);
+    }
+  }
+
+  .item:hover .icon-environmental,
+  .item.active .icon-environmental {
+    &.icon-environmental-emission {
+      @include sprite($sprite-ie, 0, -273px);
+    }
+
+    &.icon-environmental-waste {
+      @include sprite($sprite-ie, -68px, -273px);
+    }
+
+    &.icon-environmental-production {
+      @include sprite($sprite-ie, -125px, -273px);
+    }
+
+    &.icon-environmental-resources {
+      @include sprite($sprite-ie, -256px, -273px);
+    }
+  }
+
+  .icon-information {
+    @include sprite($sprite-ie, -402px, 0);
+  }
+
+  .social-links .item {
+    width: 64px;
+    height: 64px;
+    border: none;
+
+    &.twitter {
+      @include sprite($sprite-ie, -308px, -205px);
+    }
+
+    &.twitter:hover {
+      @include sprite($sprite-ie, -440px, -205px);
+    }
+
+    &.instagram {
+      @include sprite($sprite-ie, -374px, -205px);
+    }
+
+    &.instagram:hover {
+      @include sprite($sprite-ie, -506px, -205px);
+    }
+  }
+
+  .icon-close-map {
+    @include sprite($sprite-ie, -343px, 0);
+  }
+
+  .close-map-popup {
+    @include sprite($sprite-ie, -363px, 0);
+  }
+
+  // popups fixes
+  .button-close-popup {
+    background: $blue;
+
+    .icon-close {
+      @include sprite($sprite-ie, -446px, 0);
+    }
+  }
+
+  // fix icons in popup
+  .icon-focus-list-popup {
+    display: inline-block;
+    height: 95px;
+
+    &.icon-digital-ie8 {
+      width: 87px;
+      @include sprite($sprite-ie, 0, -110px);
+    }
+
+    &.icon-customers-ie8 {
+      width: 87px;
+      @include sprite($sprite-ie, -92px, -110px);
+    }
+
+    &.icon-climate-ie8 {
+      width: 88px;
+      @include sprite($sprite-ie, -188px, -110px);
+    }
+
+    &.icon-social-ie8 {
+      width: 108px;
+      @include sprite($sprite-ie, -286px, -110px);
+    }
+
+    &.icon-employee-ie8 {
+      width: 60px;
+      @include sprite($sprite-ie, -402px, -110px);
+    }
+  }
+
+  .focus-list .focus-list-title {
+    width: 205px;
+  }
+
+  .illustration-section .svg {
+    display: none;
+  }
+}
+
+//<-- END of .lt-i9

@@ -1,0 +1,415 @@
+/*
+  Here present fixes for Front page in
+  Internet explorer version less than 9.0
+*/
+/* line 17, ../sass/ie.scss */
+.lt-ie9 .ie8 {
+  display: block;
+}
+/* line 21, ../sass/ie.scss */
+.lt-ie9 .container {
+  width: 1088px;
+}
+/* line 25, ../sass/ie.scss */
+.lt-ie9 .btn-scroll-top {
+  filter: alpha(opacity=0);
+}
+/* line 28, ../sass/ie.scss */
+.lt-ie9 .btn-scroll-top.show {
+  filter: alpha(opacity=75);
+}
+/* line 31, ../sass/ie.scss */
+.lt-ie9 .btn-scroll-top.show:hover {
+  filter: alpha(opacity=100);
+}
+/* line 37, ../sass/ie.scss */
+.lt-ie9 .csr-checkbox input {
+  filter: alpha(opacity=0);
+}
+/* line 44, ../sass/ie.scss */
+.lt-ie9 .focus-background img {
+  position: relative;
+  zoom: 1;
+}
+/* line 50, ../sass/ie.scss */
+.lt-ie9 .focus-background.green .bg-overlay, .lt-ie9 .focus-background.blue .bg-overlay {
+  z-index: 1;
+  display: block;
+  filter: alpha(opacity=70);
+}
+/* line 59, ../sass/ie.scss */
+.lt-ie9 .full-width-background.gray .bg-overlay {
+  z-index: 1;
+  display: block;
+  filter: alpha(opacity=65);
+}
+/* line 65, ../sass/ie.scss */
+.lt-ie9 .full-width-background.green .bg-overlay {
+  z-index: 1;
+  display: block;
+  filter: alpha(opacity=70);
+}
+/* line 73, ../sass/ie.scss */
+.lt-ie9 .popup-container {
+  filter: alpha(opacity=0);
+}
+/* line 76, ../sass/ie.scss */
+.lt-ie9 .popup-container.show {
+  filter: alpha(opacity=100);
+}
+/* line 85, ../sass/ie.scss */
+.lt-ie9 .popup-header-background svg,
+.lt-ie9 .popup-header-background img {
+  filter: alpha(opacity=5);
+}
+/* line 90, ../sass/ie.scss */
+.lt-ie9 .button-close-popup:hover {
+  filter: alpha(opacity=80);
+}
+/* line 94, ../sass/ie.scss */
+.lt-ie9 .environmental-tabs .item:after {
+  display: none;
+}
+/* line 98, ../sass/ie.scss */
+.lt-ie9 .environmental-tabs .item.active:after {
+  display: block;
+}
+/* line 104, ../sass/ie.scss */
+.lt-ie9 .map-section .content {
+  filter: alpha(opacity=100);
+}
+/* line 108, ../sass/ie.scss */
+.lt-ie9 .map-section .map-popup {
+  filter: alpha(opacity=0);
+}
+/* line 111, ../sass/ie.scss */
+.lt-ie9 .map-section .map-popup.hide {
+  filter: alpha(opacity=0);
+}
+/* line 117, ../sass/ie.scss */
+.lt-ie9 .map-section.show .content {
+  filter: alpha(opacity=0);
+}
+/* line 121, ../sass/ie.scss */
+.lt-ie9 .map-section.show .full-width-background .bg-overlay {
+  display: none;
+}
+/* line 125, ../sass/ie.scss */
+.lt-ie9 .map-section.show .map-popup {
+  filter: alpha(opacity=100);
+}
+/* line 128, ../sass/ie.scss */
+.lt-ie9 .map-section.show .map-popup.hide {
+  filter: alpha(opacity=60);
+}
+/* line 135, ../sass/ie.scss */
+.lt-ie9 .button-hide-map {
+  background: #7a9c42;
+  filter: alpha(opacity=80);
+}
+/* line 139, ../sass/ie.scss */
+.lt-ie9 .button-hide-map:hover {
+  filter: alpha(opacity=100);
+}
+/* line 145, ../sass/ie.scss */
+.lt-ie9 .top-video {
+  background: none;
+}
+/* line 148, ../sass/ie.scss */
+.lt-ie9 .top-video img.desktop-element {
+  display: block;
+}
+/* line 172, ../sass/ie.scss */
+.lt-ie9 .intro-scroll-btn .icon-arrow-down-white img,
+.lt-ie9 .footer-logo-container .footer-logo img,
+.lt-ie9 .get-report .icon-arrow-down-blue img,
+.lt-ie9 .button-close-popup .icon-close img,
+.lt-ie9 .popup-header-background img,
+.lt-ie9 .icon-focus-list-popup img,
+.lt-ie9 .icon-arrow-top-white img,
+.lt-ie9 .icon-environmental img,
+.lt-ie9 .focus-slide-item img,
+.lt-ie9 .icon-information img,
+.lt-ie9 .icon-close-map img,
+.lt-ie9 .close-map-popup img,
+.lt-ie9 .btn-scroll-top img,
+.lt-ie9 .highlight-item img,
+.lt-ie9 .social-links img,
+.lt-ie9 .logo-sticky img,
+.lt-ie9 .focus-nav img,
+.lt-ie9 .header-logo img {
+  display: none;
+}
+/* line 177, ../sass/ie.scss */
+.lt-ie9 .header-logo {
+  background: url("../images/ie_sprite.png") no-repeat -17px 0;
+}
+/* line 181, ../sass/ie.scss */
+.lt-ie9 .intro-scroll-btn .icon-arrow-down-white {
+  background: url("../images/ie_sprite.png") no-repeat 0 0;
+  top: 0;
+}
+/* line 186, ../sass/ie.scss */
+.lt-ie9 .logo-sticky {
+  width: 99px;
+  height: 38px;
+  background: url("../images/ie_sprite.png") no-repeat -123px 0;
+}
+/* line 192, ../sass/ie.scss */
+.lt-ie9 .get-report .icon-arrow-down-blue {
+  background: url("../images/ie_sprite.png") no-repeat 0 -18px;
+}
+/* line 196, ../sass/ie.scss */
+.lt-ie9 .footer-logo-container .footer-logo {
+  background: url("../images/ie_sprite.png") no-repeat -233px 0;
+}
+/* line 202, ../sass/ie.scss */
+.lt-ie9 .btn-scroll-top .icon-arrow-top-white {
+  vertical-align: middle;
+  background: url("../images/ie_sprite.png") no-repeat -308px 0;
+}
+/* line 208, ../sass/ie.scss */
+.lt-ie9 .download-report-wrapper .close-form {
+  text-align: center;
+}
+/* line 212, ../sass/ie.scss */
+.lt-ie9 .download-report-wrapper .close-form:after {
+  content: '';
+  display: inline-block;
+  height: inherit;
+  width: 0;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+}
+/* line 222, ../sass/ie.scss */
+.lt-ie9 .download-report-wrapper .close-form .icon-close-form {
+  background: url("../images/ie_sprite.png") no-repeat -343px 0;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+}
+/* line 234, ../sass/ie.scss */
+.lt-ie9 .focus-mini-item {
+  background-image: none;
+  position: relative;
+}
+/* line 238, ../sass/ie.scss */
+.lt-ie9 .focus-mini-item:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  height: 60px;
+  left: 20px;
+  margin-top: -30px;
+}
+/* line 248, ../sass/ie.scss */
+.lt-ie9 .focus-mini-item.digital:after {
+  width: 58px;
+  background: url("../images/ie_sprite.png") no-repeat 0 -46px;
+}
+/* line 253, ../sass/ie.scss */
+.lt-ie9 .focus-mini-item.customers:after {
+  width: 57px;
+  background: url("../images/ie_sprite.png") no-repeat -68px -46px;
+}
+/* line 258, ../sass/ie.scss */
+.lt-ie9 .focus-mini-item.climate:after {
+  width: 55px;
+  background: url("../images/ie_sprite.png") no-repeat -133px -46px;
+}
+/* line 263, ../sass/ie.scss */
+.lt-ie9 .focus-mini-item.employee:after {
+  background: url("../images/ie_sprite.png") no-repeat -199px -46px;
+  width: 57px;
+  left: 15px;
+}
+/* line 269, ../sass/ie.scss */
+.lt-ie9 .focus-mini-item.social:after {
+  width: 45px;
+  background: url("../images/ie_sprite.png") no-repeat -263px -46px;
+}
+/* line 276, ../sass/ie.scss */
+.lt-ie9 .focus-prev-arrow {
+  background: url("../images/ie_sprite.png") no-repeat -316px -46px;
+}
+/* line 279, ../sass/ie.scss */
+.lt-ie9 .focus-prev-arrow:hover {
+  background: url("../images/ie_sprite.png") no-repeat -447px -46px;
+}
+/* line 284, ../sass/ie.scss */
+.lt-ie9 .focus-next-arrow {
+  background: url("../images/ie_sprite.png") no-repeat -381px -46px;
+}
+/* line 287, ../sass/ie.scss */
+.lt-ie9 .focus-next-arrow:hover {
+  background: url("../images/ie_sprite.png") no-repeat -512px -46px;
+}
+/* line 293, ../sass/ie.scss */
+.lt-ie9 .highlight-item-content .highlight-icon {
+  height: 95px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+/* line 299, ../sass/ie.scss */
+.lt-ie9 .icon-highlights-digital {
+  width: 87px;
+  background: url("../images/ie_sprite.png") no-repeat 0 -110px;
+}
+/* line 304, ../sass/ie.scss */
+.lt-ie9 .icon-highlights-customers {
+  width: 87px;
+  background: url("../images/ie_sprite.png") no-repeat -92px -110px;
+}
+/* line 309, ../sass/ie.scss */
+.lt-ie9 .icon-highlights-climate {
+  width: 88px;
+  background: url("../images/ie_sprite.png") no-repeat -188px -110px;
+}
+/* line 314, ../sass/ie.scss */
+.lt-ie9 .icon-highlights-social {
+  width: 108px;
+  background: url("../images/ie_sprite.png") no-repeat -286px -110px;
+}
+/* line 319, ../sass/ie.scss */
+.lt-ie9 .icon-highlights-employee {
+  width: 60px;
+  background: url("../images/ie_sprite.png") no-repeat -402px -110px;
+}
+/* line 325, ../sass/ie.scss */
+.lt-ie9 .popup-header-sticky.sticky {
+  background: #2d3339;
+}
+/* line 330, ../sass/ie.scss */
+.lt-ie9 .icon-large-ie8 {
+  display: inline-block;
+}
+/* line 336, ../sass/ie.scss */
+.lt-ie9 .icon-environmental {
+  display: inline-block;
+  height: 64px;
+}
+/* line 340, ../sass/ie.scss */
+.lt-ie9 .icon-environmental.icon-environmental-emission {
+  width: 58px;
+  background: url("../images/ie_sprite.png") no-repeat 0 -209px;
+}
+/* line 345, ../sass/ie.scss */
+.lt-ie9 .icon-environmental.icon-environmental-waste {
+  width: 44px;
+  background: url("../images/ie_sprite.png") no-repeat -68px -209px;
+}
+/* line 350, ../sass/ie.scss */
+.lt-ie9 .icon-environmental.icon-environmental-production {
+  width: 120px;
+  background: url("../images/ie_sprite.png") no-repeat -125px -209px;
+}
+/* line 355, ../sass/ie.scss */
+.lt-ie9 .icon-environmental.icon-environmental-resources {
+  width: 46px;
+  background: url("../images/ie_sprite.png") no-repeat -256px -209px;
+}
+/* line 363, ../sass/ie.scss */
+.lt-ie9 .item:hover .icon-environmental.icon-environmental-emission,
+.lt-ie9 .item.active .icon-environmental.icon-environmental-emission {
+  background: url("../images/ie_sprite.png") no-repeat 0 -273px;
+}
+/* line 367, ../sass/ie.scss */
+.lt-ie9 .item:hover .icon-environmental.icon-environmental-waste,
+.lt-ie9 .item.active .icon-environmental.icon-environmental-waste {
+  background: url("../images/ie_sprite.png") no-repeat -68px -273px;
+}
+/* line 371, ../sass/ie.scss */
+.lt-ie9 .item:hover .icon-environmental.icon-environmental-production,
+.lt-ie9 .item.active .icon-environmental.icon-environmental-production {
+  background: url("../images/ie_sprite.png") no-repeat -125px -273px;
+}
+/* line 375, ../sass/ie.scss */
+.lt-ie9 .item:hover .icon-environmental.icon-environmental-resources,
+.lt-ie9 .item.active .icon-environmental.icon-environmental-resources {
+  background: url("../images/ie_sprite.png") no-repeat -256px -273px;
+}
+/* line 380, ../sass/ie.scss */
+.lt-ie9 .icon-information {
+  background: url("../images/ie_sprite.png") no-repeat -402px 0;
+}
+/* line 384, ../sass/ie.scss */
+.lt-ie9 .social-links .item {
+  width: 64px;
+  height: 64px;
+  border: none;
+}
+/* line 389, ../sass/ie.scss */
+.lt-ie9 .social-links .item.twitter {
+  background: url("../images/ie_sprite.png") no-repeat -308px -205px;
+}
+/* line 393, ../sass/ie.scss */
+.lt-ie9 .social-links .item.twitter:hover {
+  background: url("../images/ie_sprite.png") no-repeat -440px -205px;
+}
+/* line 397, ../sass/ie.scss */
+.lt-ie9 .social-links .item.instagram {
+  background: url("../images/ie_sprite.png") no-repeat -374px -205px;
+}
+/* line 401, ../sass/ie.scss */
+.lt-ie9 .social-links .item.instagram:hover {
+  background: url("../images/ie_sprite.png") no-repeat -506px -205px;
+}
+/* line 406, ../sass/ie.scss */
+.lt-ie9 .icon-close-map {
+  background: url("../images/ie_sprite.png") no-repeat -343px 0;
+}
+/* line 410, ../sass/ie.scss */
+.lt-ie9 .close-map-popup {
+  background: url("../images/ie_sprite.png") no-repeat -363px 0;
+}
+/* line 415, ../sass/ie.scss */
+.lt-ie9 .button-close-popup {
+  background: #2d3339;
+}
+/* line 418, ../sass/ie.scss */
+.lt-ie9 .button-close-popup .icon-close {
+  background: url("../images/ie_sprite.png") no-repeat -446px 0;
+}
+/* line 424, ../sass/ie.scss */
+.lt-ie9 .icon-focus-list-popup {
+  display: inline-block;
+  height: 95px;
+}
+/* line 428, ../sass/ie.scss */
+.lt-ie9 .icon-focus-list-popup.icon-digital-ie8 {
+  width: 87px;
+  background: url("../images/ie_sprite.png") no-repeat 0 -110px;
+}
+/* line 433, ../sass/ie.scss */
+.lt-ie9 .icon-focus-list-popup.icon-customers-ie8 {
+  width: 87px;
+  background: url("../images/ie_sprite.png") no-repeat -92px -110px;
+}
+/* line 438, ../sass/ie.scss */
+.lt-ie9 .icon-focus-list-popup.icon-climate-ie8 {
+  width: 88px;
+  background: url("../images/ie_sprite.png") no-repeat -188px -110px;
+}
+/* line 443, ../sass/ie.scss */
+.lt-ie9 .icon-focus-list-popup.icon-social-ie8 {
+  width: 108px;
+  background: url("../images/ie_sprite.png") no-repeat -286px -110px;
+}
+/* line 448, ../sass/ie.scss */
+.lt-ie9 .icon-focus-list-popup.icon-employee-ie8 {
+  width: 60px;
+  background: url("../images/ie_sprite.png") no-repeat -402px -110px;
+}
+/* line 454, ../sass/ie.scss */
+.lt-ie9 .focus-list .focus-list-title {
+  width: 205px;
+}
+/* line 458, ../sass/ie.scss */
+.lt-ie9 .illustration-section .svg {
+  display: none;
+}

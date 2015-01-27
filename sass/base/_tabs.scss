@@ -1,0 +1,30 @@
+.tabs {
+  background-color: $blue;
+  height: 23px;
+  @include span-columns(12, 12);
+  position: relative;
+  z-index: 3;
+  font-family: $sans;
+
+  .admin-menu & {
+  }
+
+  & > li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    a {
+      display: block;
+      padding: 5px 10px;
+      @include links($white, $white);
+    }
+
+    &:hover {
+      background-color: $green;
+    }
+
+    &.active {
+      background-color: $green;
+    }
+  }
+}
